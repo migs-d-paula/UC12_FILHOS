@@ -1,6 +1,6 @@
 ﻿namespace UC12_FILHOS
 {
-    partial class RELATORIO
+    partial class formRELATORIO
     {
         /// <summary>
         /// Required designer variable.

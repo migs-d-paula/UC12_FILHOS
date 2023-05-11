@@ -17,6 +17,28 @@ namespace UC12_FILHOS
             InitializeComponent();
 
             MessageBox.Show(ClassVARIAVEIS.usuario);
+
+            validaPERMSSAO();
+        }
+
+        private void validaPERMSSAO()
+        {
+            if (ClassVARIAVEIS.permissao == "admin")
+            {
+                cadastroToolStripMenuItem.Visible = true;
+
+                Image image1 = Image.FromFile("Properties\\Resouces.Resx;");
+
+                labelRESPOSTA.Text = ClassVARIAVEIS.usuario;
+            }
+            else
+            {
+                cadastroToolStripMenuItem.Visible = false;
+
+                
+
+                labelRESPOSTA.Text = ClassVARIAVEIS.usuario;
+            }
         }
 
         private void cadastroToolStripMenuItemCADASTRO_Click(object sender, EventArgs e)
@@ -30,7 +52,7 @@ namespace UC12_FILHOS
 
         private void relatórioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form telaRELATORIO = new RELATORIO();
+            Form telaRELATORIO = new formRELATORIO();
             telaRELATORIO.MdiParent = this;
             telaRELATORIO.WindowState = FormWindowState.Maximized;
             telaRELATORIO.Show();

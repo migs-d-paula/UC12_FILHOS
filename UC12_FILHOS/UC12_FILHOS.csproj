@@ -86,11 +86,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CADASTRO.cs">
+    <Compile Include="formCADASTRO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CADASTRO.Designer.cs">
-      <DependentUpon>CADASTRO.cs</DependentUpon>
+    <Compile Include="formCADASTRO.Designer.cs">
+      <DependentUpon>formCADASTRO.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassVARIAVEIS.cs" />
     <Compile Include="FormLOGIN.cs">
@@ -99,28 +99,28 @@
     <Compile Include="FormLOGIN.Designer.cs">
       <DependentUpon>FormLOGIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="PRINCIPAL.cs">
+    <Compile Include="formPRINCIPAL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRINCIPAL.Designer.cs">
-      <DependentUpon>PRINCIPAL.cs</DependentUpon>
+    <Compile Include="formPRINCIPAL.Designer.cs">
+      <DependentUpon>formPRINCIPAL.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RELATORIO.cs">
+    <Compile Include="formRELATORIO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RELATORIO.Designer.cs">
-      <DependentUpon>RELATORIO.cs</DependentUpon>
+    <Compile Include="formRELATORIO.Designer.cs">
+      <DependentUpon>formRELATORIO.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CADASTRO.resx">
-      <DependentUpon>CADASTRO.cs</DependentUpon>
+    <EmbeddedResource Include="formCADASTRO.resx">
+      <DependentUpon>formCADASTRO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLOGIN.resx">
       <DependentUpon>FormLOGIN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PRINCIPAL.resx">
-      <DependentUpon>PRINCIPAL.cs</DependentUpon>
+    <EmbeddedResource Include="formPRINCIPAL.resx">
+      <DependentUpon>formPRINCIPAL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -130,6 +130,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -144,6 +145,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pessoa %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escudo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

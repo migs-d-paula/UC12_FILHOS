@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UC12_FILHOS
 {
-    public partial class RELATORIO : Form
+    public partial class formRELATORIO : Form
     {
-        public RELATORIO()
+        public formRELATORIO()
         {
             InitializeComponent();
         }
