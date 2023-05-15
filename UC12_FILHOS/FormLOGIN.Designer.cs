@@ -30,8 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxUSUARIO = new System.Windows.Forms.TextBox();
-            this.checkBoxADM = new System.Windows.Forms.CheckBox();
             this.buttonENTRAR = new System.Windows.Forms.Button();
+            this.textBoxSENHA = new System.Windows.Forms.TextBox();
+            this.labelSENHA = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -50,19 +51,9 @@
             this.textBoxUSUARIO.Size = new System.Drawing.Size(214, 20);
             this.textBoxUSUARIO.TabIndex = 1;
             // 
-            // checkBoxADM
-            // 
-            this.checkBoxADM.AutoSize = true;
-            this.checkBoxADM.Location = new System.Drawing.Point(124, 114);
-            this.checkBoxADM.Name = "checkBoxADM";
-            this.checkBoxADM.Size = new System.Drawing.Size(88, 17);
-            this.checkBoxADM.TabIndex = 2;
-            this.checkBoxADM.Text = "administrador";
-            this.checkBoxADM.UseVisualStyleBackColor = true;
-            // 
             // buttonENTRAR
             // 
-            this.buttonENTRAR.Location = new System.Drawing.Point(129, 165);
+            this.buttonENTRAR.Location = new System.Drawing.Point(132, 183);
             this.buttonENTRAR.Name = "buttonENTRAR";
             this.buttonENTRAR.Size = new System.Drawing.Size(75, 23);
             this.buttonENTRAR.TabIndex = 3;
@@ -70,13 +61,31 @@
             this.buttonENTRAR.UseVisualStyleBackColor = true;
             this.buttonENTRAR.Click += new System.EventHandler(this.buttonENTRAR_Click);
             // 
+            // textBoxSENHA
+            // 
+            this.textBoxSENHA.Location = new System.Drawing.Point(71, 114);
+            this.textBoxSENHA.Name = "textBoxSENHA";
+            this.textBoxSENHA.PasswordChar = '*';
+            this.textBoxSENHA.Size = new System.Drawing.Size(214, 20);
+            this.textBoxSENHA.TabIndex = 5;
+            // 
+            // labelSENHA
+            // 
+            this.labelSENHA.AutoSize = true;
+            this.labelSENHA.Location = new System.Drawing.Point(68, 98);
+            this.labelSENHA.Name = "labelSENHA";
+            this.labelSENHA.Size = new System.Drawing.Size(38, 13);
+            this.labelSENHA.TabIndex = 4;
+            this.labelSENHA.Text = "Senha";
+            // 
             // FormLOGIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 450);
+            this.ClientSize = new System.Drawing.Size(345, 273);
+            this.Controls.Add(this.textBoxSENHA);
+            this.Controls.Add(this.labelSENHA);
             this.Controls.Add(this.buttonENTRAR);
-            this.Controls.Add(this.checkBoxADM);
             this.Controls.Add(this.textBoxUSUARIO);
             this.Controls.Add(this.label1);
             this.Name = "FormLOGIN";
@@ -90,7 +99,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxUSUARIO;
-        private System.Windows.Forms.CheckBox checkBoxADM;
         private System.Windows.Forms.Button buttonENTRAR;
+        private System.Windows.Forms.TextBox textBoxSENHA;
+        private System.Windows.Forms.Label labelSENHA;
     }
 }

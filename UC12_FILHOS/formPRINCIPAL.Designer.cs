@@ -32,8 +32,11 @@
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelRESPOSTA = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelIMAGEM1 = new System.Windows.Forms.Label();
+            this.labelTEXTO = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -70,23 +73,42 @@
             this.labelRESPOSTA.Size = new System.Drawing.Size(0, 13);
             this.labelRESPOSTA.TabIndex = 2;
             // 
-            // label1
+            // panel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Image = global::UC12_FILHOS.Properties.Resources.escudo;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Location = new System.Drawing.Point(-3, 442);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.panel1.Controls.Add(this.labelTEXTO);
+            this.panel1.Controls.Add(this.labelIMAGEM1);
+            this.panel1.Location = new System.Drawing.Point(0, 422);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 29);
+            this.panel1.TabIndex = 8;
+            // 
+            // labelIMAGEM1
+            // 
+            this.labelIMAGEM1.AutoSize = true;
+            this.labelIMAGEM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIMAGEM1.Image = global::UC12_FILHOS.Properties.Resources.escudo;
+            this.labelIMAGEM1.Location = new System.Drawing.Point(4, 4);
+            this.labelIMAGEM1.Name = "labelIMAGEM1";
+            this.labelIMAGEM1.Size = new System.Drawing.Size(29, 20);
+            this.labelIMAGEM1.TabIndex = 0;
+            this.labelIMAGEM1.Text = "     ";
+            // 
+            // labelTEXTO
+            // 
+            this.labelTEXTO.AutoSize = true;
+            this.labelTEXTO.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTEXTO.Location = new System.Drawing.Point(45, 4);
+            this.labelTEXTO.Name = "labelTEXTO";
+            this.labelTEXTO.Size = new System.Drawing.Size(51, 20);
+            this.labelTEXTO.TabIndex = 9;
+            this.labelTEXTO.Text = "label2";
             // 
             // FormPRINCIPAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 454);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelRESPOSTA);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
@@ -95,6 +117,8 @@
             this.Text = "PRINCIPAL";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,7 +130,9 @@
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatórioToolStripMenuItem;
         private System.Windows.Forms.Label labelRESPOSTA;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelTEXTO;
+        private System.Windows.Forms.Label labelIMAGEM1;
     }
 }
 

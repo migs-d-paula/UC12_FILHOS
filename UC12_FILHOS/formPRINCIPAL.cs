@@ -26,19 +26,16 @@ namespace UC12_FILHOS
             if (ClassVARIAVEIS.permissao == "admin")
             {
                 cadastroToolStripMenuItem.Visible = true;
-
-                Image image1 = Image.FromFile("Properties\\Resouces.Resx;");
-
-                labelRESPOSTA.Text = ClassVARIAVEIS.usuario;
+                labelIMAGEM1.Image = Properties.Resources.escudo;
+                labelTEXTO.Text = ClassVARIAVEIS.usuario;
             }
             else
             {
                 cadastroToolStripMenuItem.Visible = false;
-
-                
-
-                labelRESPOSTA.Text = ClassVARIAVEIS.usuario;
+                labelIMAGEM1.Image = Properties.Resources.pessoa__1_;
+                labelTEXTO.Text = ClassVARIAVEIS.usuario;
             }
+
         }
 
         private void cadastroToolStripMenuItemCADASTRO_Click(object sender, EventArgs e)
